@@ -1,0 +1,71 @@
+The key is here:
+
+ng-click="selectionChanged(option.id)">11:50 PM
+
+If I can cycle through the li elements, I should be able to get what the ng-click selectionChanged is :-)
+
+---------------------------------------------------------------------------------------
+
+Grab some code from here?
+
+https://developer.snapappointments.com/bootstrap-select/
+https://github.com/snapappointments/bootstrap-select
+
+
+---------------------------------------------------------------------------------------
+
+<div class="dropdown" align="right">
+    <input type="button" id="select_staff" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" value="<?php echo $cur_admin_name ?> ▼">
+    <ul id="admin_cal_list" class="dropdown-menu dropdown-menu-right">
+    <input type="hidden" id="admin_id" class="form-control">
+        <?php foreach ($admin_name as $admin_list): ?>
+            <li id="<?php echo $admin_list["interview_plan_staff_id"]; ?>"><a href="#"><?php echo $admin_list["interview_plan_staff_name"]; ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  console.log( selText);
+  $(this).parents('.dropdown').find('.dropdown-toggle').val(selText);
+});
+
+---------------------------------------------------------------------------------------
+Dropdowns are built on a third party library, Popper.js, which provides dynamic positioning and viewport detection
+
+Call the dropdowns via JavaScript:
+
+Copy
+$('.dropdown-toggle').dropdown()
+data-toggle="dropdown" still required
+Regardless of whether you call your dropdown via JavaScript or instead use the data-api, data-toggle="dropdown" is always required to be present on the dropdown’s trigger element.
+
+
+$('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+})
+
+---------------------------------------------------------------------------------------
+
+
+To start figuring it out, Here is how you can open a drop down:
+
+$('.trigger_button').click(function(e){
+  // Kill click event:
+  e.stopPropagation();
+  // Toggle dropdown if not already visible:
+  if ($('.dropdown').find('.dropdown-menu').is(":hidden")){
+    $('.dropdown-toggle').dropdown('toggle');
+  }
+});
+
+---------------------------------------------------------------------------------------
+
+2
+
+Bootstrap dropdowns are not like <select> elements. They don't have "selections". It is just a dropdown that shows a list of links when you click the button. I'm guessing that you just want to change the text for that button when the page loads. Here is how you can do that:
+
+$("#dnsType span").text("Hostname").attr('data-value','Hostname');
+
+
+
