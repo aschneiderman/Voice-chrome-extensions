@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Extension Test",
+  "name": "Upwork Test",
   "version": "1.0",
-  "description": "Test to make sure I can do a basic extension",
+  "description": "See if I can do a simple manipulatioon with Upwork",
   "content_scripts": [
     {
       "matches": [
