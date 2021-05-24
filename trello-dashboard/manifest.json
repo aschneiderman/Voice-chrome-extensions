@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Trello Dashboard",
+  "version": "1.0",
+  "description": "Clean up the Trello Workspace Table",
+  "content_scripts": [
+    {
+      "matches": [ "https://trello.com/everyactionteam/tables*" ,
+                  "https://makersall.org/*"],
+      "js": ["dashboard.js"]
+    }
+  ]
+}

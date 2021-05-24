@@ -1,0 +1,7 @@
+What I need to figure out:
+
+- How can I authorize a script to run without having to click on the button every single freaking time?
+
+- How do I make a script that is just for a particular page/URL?
+
+- How do I manipulate the DOM?

@@ -1,4 +1,0 @@
-
-Google's main documentation:
-https://developer.chrome.com/docs/extensions/mv2/devguide/
-https://developer.chrome.com/docs/extensions/mv2/overview/
