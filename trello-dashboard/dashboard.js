@@ -18,7 +18,34 @@ for (var i = 0; i < elts.length; i++) {
 
 console.log(`Total number of paragraphs I made purple: ${elts.length}`);
 
+// createEvent
 
+// div element with role="button".
+// div element has onclick event to handle mouse clicks
 
 // Here's what we're going to work with:
 // <a role="button"><li class="_17Tk1sJgzO0FYP"><div class="_17h0Z1BErjcV5x"><span class="_1MfE1hXf6pHAzw">Sort ascending</span></div></li></a>
+
+// $("<p>").text("jQuery v" + $.fn.jquery).appendTo(document.body);
+
+// // Hook up a handler *not* using jQuery, in both the DOM0 and DOM2 ways
+// div = document.getElementById("theDiv");
+// div.onclick = dom0Handler;
+// if (div.addEventListener) {
+//   div.addEventListener('click', dom2Handler, false);
+// } else if (div.attachEvent) {
+//   div.attachEvent('onclick', dom2Handler);
+// }
+
+// // Hook up a handler using jQuery
+// $("#theDiv").click(jqueryHandler);
+
+// // Trigger the click when our button is clicked
+// $("#theButton").click(function() {
+//   display("Triggering <code>click</code>:");
+//   $("#theDiv").click();
+// });
+
+// function dom0Handler() {
+//   display("DOM0 handler triggered");
+// }
