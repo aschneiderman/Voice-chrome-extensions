@@ -1,0 +1,44 @@
+Selenium's Select object is supposed to work with HTML Select tag, given you don't have any Select tags you need to treat the dropdown placeholders and nested entries as separate objects and access it like:
+
+driver.find_element_by_xpath("//input[@placeholder='Select']").click()
+driver.find_element_by_xpath("//span[text()='Finance']").click()
+#etc
+
+for ex:
+
+driver.get('https://getbootstrap.com/docs/4.0/components/dropdowns/')
+driver.execute_script("arguments[0].scrollIntoView(true);",
+                      driver.find_element_by_xpath("//a[@href='#single-button-dropdowns']"))
+driver.find_element_by_id('dropdownMenuButton').click()
+
+
+see also:
+Navigating usjng XPath:
+https://www.w3schools.com/xml/xpath_intro.asp
+
+
+Date Picker:
+
+driver.navigate().to("https://www.turkishairlines.com");
+Click to “dateSelector“
+
+//Click and open the Date Picker
+driver.findElement(By.id("dateSelector")).click();
+
+Wait for the Departure Date DatePicker.
+
+//This is from date picker table
+WebElement dateWidgetFrom = wait.until(
+    ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-datepicker-calendar"))).get(0);
+--------------------
+
+Wait for the Departure Date DatePicker.
+
+//This is from date picker table
+WebElement dateWidgetFrom = wait.until(
+    ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("ui-datepicker-calendar"))).get(0);
+
+
+--------------
+
+
