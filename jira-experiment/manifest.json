@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Experiment",
+  "version": "1.0",
+  "description": "Test to make sure I can do a basic extension",
+  "content_scripts": [
+    {
+      "matches": [ "https://ngpvan.atlassian.net/*" ],
+      "js": ["content.js"]
+    }
+  ]
+}
