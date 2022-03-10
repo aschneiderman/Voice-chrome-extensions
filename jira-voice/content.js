@@ -1,11 +1,5 @@
-//
-// Based on extension tutorials & code by Daniel Shiffman
-// http://shiffman.net/a2z
-
 // This is the content script for the extension
 
-// Make sure that the extension is installed
-console.log("Chrome extension is running!");
 
 // Content scripts can manipulate the DOM
 // Here I'm changing the background for all the paragraphs

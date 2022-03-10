@@ -7,7 +7,7 @@ Here's what you need to do to install a Google Chrome extension that you are wor
   
 For each extension you want to Develop: 
 - Click __Load unpacked__, then the folder containing the extension
-- When you make a change to the extension, go back to the extensions page and click the little reload button on that extension
+- When you make a change to the extension, go back to the extensions page and click the little reload button on that extension 
 
 
 ## Manifest.json

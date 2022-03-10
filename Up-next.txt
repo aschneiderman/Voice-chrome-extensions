@@ -1,7 +1,9 @@
-What I need to figure out:
+ ## Up Next
 
-- How can I authorize a script to run without having to click on the button every single freaking time?
+Think about what it would take to make creating a new support ticket
+easier to do
 
-- How do I make a script that is just for a particular page/URL?
+Understand How Focus Works and How You Can Manipulate It
+https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex#accessibility_concerns
 
-- How do I manipulate the DOM?
+Understand How to Scroll down to a particular element using JavaScript

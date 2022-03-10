@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Jira  By Voice",
+  "version": "1.0",
+  "description": "Make Jira easier to work with  using voice recognition",
+  "content_scripts": [
+    {
+      "matches": [ "https://*.atlassian.net/*" ],
+      "js": ["content.js"]
+    }
+  ]
+}
