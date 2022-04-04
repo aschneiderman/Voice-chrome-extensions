@@ -1,4 +1,14 @@
- ## Up Next
+## Up Next
+
+
+EveryAction:
+
+"Check User" =  pull up the user page
+
+
+
+
+Jira:
 
 Think about what it would take to make creating a new support ticket
 easier to do

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "EveryAction by Voice",
+  "version": "1.0",
+  "description": "Enhance my ability to navigate EveryAction by voice",
+  "content_scripts": [
+    {
+      "matches": [ "https://*.everyaction.comg/*" ],
+      "js": ["content.js"]
+    }
+  ]
+}
