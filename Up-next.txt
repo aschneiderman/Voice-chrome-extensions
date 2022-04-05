@@ -1,19 +1,23 @@
 ## Up Next
 
-
-EveryAction:
-
-"Check User" =  pull up the user page
-
-
-
-
 Jira:
 
-Think about what it would take to make creating a new support ticket
-easier to do
+Creating Tickets:
+Create gets me to Summary
+ Then 25 or 27 tabs gets me to Description
+
+
+Think about what it would take to make creating a new support ticket easier to do
 
 Understand How Focus Works and How You Can Manipulate It
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex#accessibility_concerns
 
 Understand How to Scroll down to a particular element using JavaScript
+
+
+
+EveryAction:
+
+"Check User" =  pull up the user page
+ NOTE: turns out I can handle that through Vocola
+
